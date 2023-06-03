@@ -99,46 +99,84 @@ textarea {
 html {
   background-color:#FFE4E1;
   height: 100%;
+  width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Almarai', sans-serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
-  color: white;
-}
-
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  /*font-weight: 700; */
-  display: flex;
-  justify-content: space-between;
-}
-
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #666666;
-  line-height: 1.5em;
-  font-size: 1.2em;
-  /*background-color: #CB1A5B;*/
-  height: auto;
+  justify-content: center;
+}
+
+.wrapper  {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.wrapper p span {
+    font-family: 'Lora', sans-serif;
+}
+  
+header,
+footer {
+  /*height: 80px; */
+  width: 100%;
   display: flex;
-  width: 30%;
-  /*text-align: center;*/
+  justify-content: flex-start;
+  /*align-items: center; */
+}
+
+header {  
+    font-size: 2em;
+    font-family: 'Lora', sans-serif;
+  /*  padding-left: 15px;
+    padding-right: 15px; */
+    /* font-family: */
+}
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*padding-left: 15px;
+    padding-right: 15px; */
+    border-bottom: 1px solid #666666
+  }
+  
+  main p {
+    font-size: 1em;
+  }
+  
+.div-1, .div-2, .div-3 {
+  /*color: #666666;
+  font-family: 'Almarai', sans-serif;
+  line-height: 1.5em;
+  */
+  display: flex;
+  font-size: 1em;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #ffe4e1; 
+  width: 30%; 
+  
+ /*
   text-align: center;
-  /*border: 0.25em solid white;*/
   padding: .75em;
-  font-family: 'Almarai', sans-serif;
+  height: 200px; */
 }
  .div-2 {
-  border-right: 0.1em solid #666666;
-  border-left: 0.1em solid #666666;   
+  border-right: 1px solid #666666;
+  border-left: 1px solid #666666;   
+  padding: 0 40px;
  }
 
-
+footer {
+    border-top: 1px solid #666666;
+}
 
 /* ==========================================================================
    Helper classes
